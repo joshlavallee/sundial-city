@@ -5,7 +5,7 @@ import { PointLightHelper } from "three";
 
 const Sun = () => {
   const sunRef: any = useRef();
-  const radius = 3;
+  const radius = 15;
 
   useFrame(({ clock }) => {
     sunRef.current.position.x = Math.cos(clock.elapsedTime) * radius;
